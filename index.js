@@ -1,10 +1,14 @@
 class Driver{
-  constructor(name, startDate){
-    this.name = name 
-    this.startDate = startDate
+  constructor(name, start){
+    this.name = name
+    this.startDate = function(){
+      let msec = Date.parse(start)
+      let date = new Date(msec);
+      return date
+    }
+    
   }
   
 
-  
-}
 
+}
