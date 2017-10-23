@@ -27,8 +27,8 @@ class Route{
       }
 
     }
-    this.estimatedTime = function(){
-      if (true){
+    this.estimatedTime = function(peakHours){
+      if (peakHours){
         return (this.blocksTravelled()/2)
       }
       else{
