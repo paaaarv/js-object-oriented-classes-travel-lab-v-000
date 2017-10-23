@@ -5,6 +5,9 @@ class Driver{
     this.startDate = new Date(msec)
 
   }
+  yearsExperienceFromBeginningOf(end){
+    return (end - this.startDate.getFullYear())
+  }
 
 
 
