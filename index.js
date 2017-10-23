@@ -27,5 +27,9 @@ class Route{
       }
 
     }
+    this.timeTravelled = function(){
+      return (this.blocksTravelled()/3)
+    }
   }
+  
 }
