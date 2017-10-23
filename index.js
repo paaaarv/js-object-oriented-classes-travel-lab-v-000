@@ -27,9 +27,9 @@ class Route{
       }
 
     }
-    this.timeTravelled = function(){
+    this.estimatedTime = function(){
       return (this.blocksTravelled()/3)
     }
   }
-  
+
 }
