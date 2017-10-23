@@ -13,7 +13,7 @@ class Driver{
 
 class Route{
   constructor(beg,end){
-    this.blocksTravelled(){
+    this.blocksTravelled = function(){
       if (beg.horizontal === end.horizontal){
         let total = Math.abs(beg.vertical - end.vertical)
         return total
@@ -25,7 +25,7 @@ class Route{
         let total = Math.abs(beg.vertical - end.vertical) + 4
         return total
       }
-      
+
     }
   }
 }
